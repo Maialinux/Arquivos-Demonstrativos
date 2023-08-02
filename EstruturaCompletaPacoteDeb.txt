@@ -7,7 +7,7 @@ Essential: no
 Priority: optional
 Section: sound
 Depends:
-Maintainer: Luiz Eduardo Maia Ribeiro <distromaialinux@gmail.com>
+Maintainer: Eduardo Maia <distromaialinux@gmail.com>
 Installed-Size: 23,2 MB
 Download-Size: 5.594 kB
 Homepage: https://www.audacityteam.org
