@@ -1,0 +1,17 @@
+#!/bin/bash
+
+chown root:root /lib/systemd/system/maiawall.service
+
+chown root:root /etc/init.d/maiawall.sh
+
+chmod 644 /lib/systemd/system/maiawall.service
+
+chmod 755 /etc/init.d/maiawall.sh
+
+systemctl daemon-reload
+
+systemctl enable maiawall
+
+systemctl start maiawall
+
+echo -e "\n\nFirewall está habilitado agora\n\n"

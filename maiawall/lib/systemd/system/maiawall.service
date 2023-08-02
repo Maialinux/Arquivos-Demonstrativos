@@ -1,0 +1,13 @@
+[Unit]
+Description=Firewall Maialinux
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/etc/init.d/maiawall.sh start
+ExecStop=/etc/init.d/maiawall.sh stop
+ExecReload=/etc/init.d/maiawall.sh restart
+
+[Install]
+WantedBy=multi-user.target
+

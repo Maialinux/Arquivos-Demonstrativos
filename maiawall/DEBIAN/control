@@ -1,0 +1,10 @@
+Package: maiawall
+Version: 0.1
+Architecture: all
+Essential: no
+Priority: optional
+Maintainer: Luiz Eduardo Maia Ribeiro <distromaialinux@gmail.com>
+Installed-Size: 3 KB
+Download-Size:  1 KB
+Homepage: https://maialinux.com
+Description: Script pronto de firewall simples mas eficaz feito para uso doméstico.
