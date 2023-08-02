@@ -1,0 +1,9 @@
+Package: maialinux-sid
+Version: 0.1
+Priority: optional
+Architecture: all
+Maintainer: Eduardo Maia <distromaialinux@gmail.com>
+Installed-Size: 1,1 kB 
+Homepage: https://maialinux.com
+Download-Size: 1,1 kB
+Description: Disponibiliza o repositório sid.

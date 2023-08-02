@@ -1,0 +1,7 @@
+Package: *
+Pin: release a=trixie
+Pin-Priority: 100
+
+Package: lmms
+Pin: version 1.2.2+*
+Pin-Priority: 1

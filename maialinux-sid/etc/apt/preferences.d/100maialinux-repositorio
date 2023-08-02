@@ -1,0 +1,3 @@
+Package: *
+Pin: origin maialinux.com/repo/ ./ Packages
+Pin-Priority: 990
