@@ -1,0 +1,64 @@
+# Arquivo dentro de [ DEBIAN/control ]     do audacity
+
+Package: audacity
+Version: 3.2.5
+Architecture: all
+Essential: no
+Priority: optional
+Section: sound
+Depends:
+Maintainer: Luiz Eduardo Maia Ribeiro <distromaialinux@gmail.com>
+Installed-Size: 23,2 MB
+Download-Size: 5.594 kB
+Homepage: https://www.audacityteam.org
+Description: editor de áudio multiplataforma rápido
+ Audacity é um editor de áudio multitrilha para Linux/Unix, MacOS e
+ Windows. Ele foi projetado para gravação, execução e edição fácil de
+ áudio digital. O Audacity apresenta ferramentas de efeitos digitais e para
+ análise de espectro. A edição é muito rápida e oferece desfazer/refazer
+ ilimitado.
+ os formatos de arquivos para os quais há suporte incluem Ogg Vorbis, MP2,
+ MP3, WAV, AIFF e AU.
+
+
+#----------------------------------------------------------------------------------------------
+
+# Arquivos preinst, postinst, prerm e postrm de [ DEBIAN/(fica aqui os arquivos) ]     
+# Estes arquivos são arquivos não obrigatórios porém bastante funcionais e indispensáveis.
+# Eles são scripts em shell que rodam em uma parte da instalação do seu pacote debian.
+
+# preinst - Faz alguma coisa antes da instalação do pacote.deb
+# postinst - Faz alguma coisa depois da instalação do pacote.deb
+# prerm - Faz alguma coisa antes da remoção do pacote.deb
+# postrm - Faz alguma coisa depois da remoção do pacote.deb
+
+# Para procurar mais informação entre no site: https://man7.org/linux/man-pages/man5/ e pesquise pelos manuais
+# deb-preinst, deb-postinst, deb-prerm ou deb-postrm.  
+
+
+#----------------------------------------------------------------------------------------------
+
+# No meu remaster maialinux eu coloco os meus programas selecionado dentro de
+# /opt/Programas/
+
+
+
+#----------------------------------------------------------------------------------------------
+
+# Entrada para desktop no /usr/share/applications/
+
+[Desktop Entry]
+Name=Audacity
+GenericName=Sound Editor
+GenericName[pt_BR]=Editor de Áudio
+Comment=Record and edit audio files
+Comment[pt_BR]=Grava e edita arquivos de áudios
+Keywords=audio;sound;
+# O icone depende de onde você coloca ele. De forma Global ou Local
+Icon=audacity
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=audacity %F
+StartupNotify=false
+Terminal=false
+NoDisplay=false

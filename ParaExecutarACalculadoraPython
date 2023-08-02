@@ -1,0 +1,19 @@
+# Comando para executar meu programa em python 
+
+cd /opt/MaiaCalc/; ./MaiaCalc
+
+x-terminal-emulator -T &quot;cd /opt/MaiaCalc/; ./MaiaCalc
+
+x-terminal-emulator -T &quot;/opt/MaiaCalc/MaiaCalc;
+
+ 
+
+# Comando 1 com pyinstaller para criar executável em bundle - Pasta com executável
+# Inclui a pasta icones ao bundle
+
+pyinstaller -w main.py --add-data "icones:icones/" --name maiacalc
+
+
+# Comando  2 com pyinstaller para criar executável portable python - Cria apenas um arquivo
+
+pyinstaller --noconfirm --onefile --noconsole -w main.py --add-data "icones:icones/" --name maiacalc 

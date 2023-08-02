@@ -1,0 +1,6 @@
+# Mini iso com pacotes sid
+https://d-i.debian.org/daily-images/amd64/daily/netboot/mini.iso
+
+
+# Comando que escaneia e cria lista de pacotes
+dpkg-scanpackages -m . /dev/null > Packages

@@ -1,0 +1,71 @@
+1: Flatpak e derivados
+2: Pacotes .DEB menos a Unity3d, pular a Unity3d pois não sei se vai dar problema
+3: Steam
+4: Unity3d
+AP
+1:
+apt install flatpak -y
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Instalar a Tela de descanso FlipClock
+flatpak install one.alynx.FlipClock -y
+
+# Unity 3D install:
+  flatpak install flathub com.unity.UnityHub
+# Unity 3d Run:
+  flatpak run com.unity.UnityHub
+
+# Epic Asset Manager Install:
+flatpak install flathub io.github.achetagames.epic_asset_manager
+# Epic Asset Manager Run:
+flatpak run io.github.achetagames.epic_asset_manager
+
+
+#===========================================================================================================#
+
+2: 
+Pacotes .DEB estão na pasta empacotados
+
+#===========================================================================================================#
+
+3:
+
+dpkg --add-architecture i386
+
+apt update -y
+
+# Ideal instalar bibliotecas de 32 bits para a steam funcionar corretamente
+# neste repositório tem o maiaLibsSteam.txt, você instalá-lo.
+
+#instalar os pacotes do arquivo com o seguinte comando:
+#apt install $(cat pacotes)
+
+wget http://repo.steampowered.com/steam/archive/stable/steam_latest.deb
+
+chmod +x steam_latest.deb
+
+apt install ./steam_latest.deb -y
+
+echo "Steam Instalada com Sucesso"
+
+
+#===========================================================================================================#
+
+4:
+
+Para instalar o Unity Hub em uma distribuição Debian ou Ubuntu Linux, você precisa adicionar o repositório Unity Hub Debian junto com a chave de assinatura pública para verificar a integridade dos pacotes.
+
+Para adicionar a chave de assinatura pública, execute o seguinte comando:
+ch
+$ wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+Para adicionar o repositório Unity Hub, você precisa de uma entrada em /etc/apt/sources.list.d. Execute o seguinte comando para adicionar o repositório Unity Hub:
+
+$ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+Atualize o cache do pacote e instale o pacote:
+
+$ sudo apt update
+$ sudo apt-get install unityhub
+
+
+

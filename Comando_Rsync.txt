@@ -1,0 +1,7 @@
+# Comandos Rsync:
+
+rsync -av --delete  original/ duplicate/
+
+rsync -azP [SRC] [DEST]
+
+rsync -a --delete --backup /path/to/SRC --backup-dir=/path/to/backup [DEST]
