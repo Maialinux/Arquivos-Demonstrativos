@@ -1,19 +1,7 @@
+Package: *
+Pin: release a=bookworm
+Pin-Priority: 100
+ 
 Package: lmms
-Pin: origin deb.debian.org
-Pin-Priority: 1
-
-Package: godot*
-Pin: origin deb.debian.org
-Pin-Priority: 1
-
-Package: blender
-Pin: origin deb.debian.org
-Pin-Priority: 1
-
-Package: audacity
-Pin: origin deb.debian.org
-Pin-Priority: 1
-
-Package: smplayer
-Pin: origin deb.debian.org
+Pin: version 1.2.2+*
 Pin-Priority: 1
