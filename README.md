@@ -1,6 +1,7 @@
 # Arquivos Demonstrativos
 
 <hr>
+<br>
 
 ### Alguns arquivos usados no meu remaster que foram criados, editados e que servem agora como um arquivo de exemplo. 
 <br>
