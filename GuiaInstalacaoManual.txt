@@ -6,7 +6,7 @@ AP
 1:
 apt install flatpak -y
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Instalar a Tela de descanso FlipClock
 flatpak install one.alynx.FlipClock -y
